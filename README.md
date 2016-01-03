@@ -1,4 +1,4 @@
-bg_slider
+BG Slider
 =========
 
-Background Slider
+Background Slider - plugin for jQuery
