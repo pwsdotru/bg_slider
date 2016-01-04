@@ -12,11 +12,18 @@ body {
     left: 50%;
     margin-left: -450px;
 }
-
-.info > p {
-    font-size: 0.7em;
+.code {
+    text-align: left;
+    font-family: courier, monospace;
 }
 
+.code code {
+    display: block;
+    margin: 1em;
+    padding: 1em;
+    font-size: 1em;
+    background-color: bisque;
+}
 .demo {
     width: 640px;
     height: 400px;
@@ -30,7 +37,7 @@ body {
     margin-left: -320px;
 }
 
-.demo h2 {
+.demo h3 {
     font-size: 3em;
     margin: 0;
     padding-top: 2em;
@@ -38,4 +45,14 @@ body {
 
 .demo p {
     font-size: 1em;
+}
+
+.info > p {
+    font-size: 0.7em;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 1em;
+    font-size: 0.8em;
 }

@@ -1,12 +1,34 @@
 /**
  * BG Slider - plugin for jQuery
+ *
+ * version 1.0
+ *
+ * Author: Aleksandr Novikov
+ * Site: http://pws.ru
+ * E-mail: pwsdotru@gmail.com
+ *
+ * Usage:
+ *
+ * 1. Define in HTML container with images list (urls separated by semicolons) in attribute data-sliders:
+ *   <div data-sliders="demo/img1.jpg;demo/img2.jpg;demo/img3.jpg;demo/img4.jpg" id="demo">
+ *
+ * 2.Run slider
+ *
+ * 2.1 with default options
+ *   $('#demo').bg_slider();
+ *
+ * 2.2 or with custom options
+ *  $('#demo').bg_slider({timeout: 10, speed: 2});
+ *
+ *  timeout - time in seconds for show each slide
+ *  speed   - time in seconds for switch slides
  */
 (function($) {
   var methods = {
-    init : function( options ) {
-
-      options.timeout = options.timeout | 5;
-      options.speed = options.speed | 2;
+    init : function(options) {
+      options = options || {};
+      options.timeout = options.timeout || 5;
+      options.speed = options.speed || 2;
 
       options.timeout = options.timeout * 1000;
       options.speed = options.speed + 's';
