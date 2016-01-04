@@ -14,7 +14,7 @@ body {
 }
 .code {
     text-align: left;
-    font-family: courier, monospace;
+    font-family: "courier new", courier, monospace;
 }
 
 .code code {
