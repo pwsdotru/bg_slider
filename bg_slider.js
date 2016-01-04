@@ -4,6 +4,10 @@
 (function($) {
   var methods = {
     init : function( options ) {
+
+      options.timeout = options.timeout | 5;
+      options.speed = options.speed | 2;
+
       options.timeout = options.timeout * 1000;
       options.speed = options.speed + 's';
       this.css('transition', options.speed);

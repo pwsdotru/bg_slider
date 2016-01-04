@@ -1,9 +1,31 @@
 <html>
     <head>
         <title>BG Slider demo</title>
-        <script type="application/javascript" src="./../bg_slider.js"></script>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link type="text/css" rel="stylesheet" href="./style.css" />
+
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script type="text/javascript" src="./../bg_slider.js"></script>
+
+        <script type="text/javascript">
+            (function ($) {
+                $(function () {
+                    $("#demosea").bg_slider({timeout: 5});
+                });
+            })(jQuery);
+        </script>
     </head>
     <body>
-
+        <h1>Example 1</h1>
+        <div class="example">
+            <div data-sliders="sea/img1.jpg;sea/img2.jpg;sea/img3.jpg;sea/img4.jpg" id="demosea" class="demo">
+                <h2>Data inside block</h2>
+                <p>Text for test</p>
+            </div>
+            <div class="info">
+                <p>Images from <a href="https://www.flickr.com/photos/aigle_dore/" target="_blank"> Moyan Brenn</a></p>
+                <p class="license">This image is property of Moyan Brenn and registered to the U.S. Copyright Office. The basic license offered for this image is called C.C. Attr. 2.0 Gen. (CC BY 2.0) or Type-1.</p>
+            </div>
+        </div>
     </body>
 </html>

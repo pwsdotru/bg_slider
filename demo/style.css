@@ -1,0 +1,41 @@
+body {
+    background-color: #fff;
+    margin: 0;
+    padding: 1em;
+    font-family: Helvetica, Arial;
+}
+
+.example {
+    text-align:center;
+    position: relative;
+    width: 900px;
+    left: 50%;
+    margin-left: -450px;
+}
+
+.info > p {
+    font-size: 0.7em;
+}
+
+.demo {
+    width: 640px;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    position: relative;
+    left: 50%;
+    margin-left: -320px;
+}
+
+.demo h2 {
+    font-size: 3em;
+    margin: 0;
+    padding-top: 2em;
+}
+
+.demo p {
+    font-size: 1em;
+}
