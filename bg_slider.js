@@ -39,6 +39,12 @@
         options.total = options.slides.length;
         $(this).data('bg_slider-options', options);
         if (options.total > 1) {
+          var i;
+          var images = [];
+          for(i = 0; i < options.total; i++) {
+            images[i] = new Image();
+            images[i].src = options.slides[i];
+          }
           options.current = -1;
           this.bg_slider('goSlides');
         }
